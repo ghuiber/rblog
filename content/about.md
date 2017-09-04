@@ -1,6 +1,8 @@
 ---
 title: "About"
-date: "2016-05-05T21:48:51-07:00"
+date: "2017-09-03"
 ---
 
-This is a "hello world" example website for the [**blogdown**](https://github.com/rstudio/blogdown) package. The theme was forked from [@jrutheiser/hugo-lithium-theme](https://github.com/jrutheiser/hugo-lithium-theme) and modified by [Yihui Xie](https://github.com/yihui/hugo-lithium-theme).
+I live in San Francisco now, so I do data science in the fog. I moved here from Durham, NC. There I was noodling in the data stream. I'm an immigrant. We adapt or leave.
+
+I am trying out [blogdown](https://bookdown.org/yihui/blogdown/) with the hope that it will be easier to write this way: I can do it straight from RStudio with math and R code -- should the need come up -- treated as first-class citizens.

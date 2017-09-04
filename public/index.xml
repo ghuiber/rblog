@@ -6,10 +6,30 @@
     <description>Recent content on Data science in the fog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Dec 2016 21:49:57 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 03 Sep 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Sun, 03 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>I live in San Francisco now, so I do data science in the fog. I moved here from Durham, NC. There I was noodling in the data stream. I&amp;rsquo;m an immigrant. We adapt or leave.
+I am trying out blogdown with the hope that it will be easier to write this way: I can do it straight from RStudio with math and R code &amp;ndash; should the need come up &amp;ndash; treated as first-class citizens.</description>
+    </item>
+    
+    <item>
+      <title>I gave up on Anaconda R</title>
+      <link>/2017/09/03/i-gave-up-on-anaconda-r/</link>
+      <pubDate>Sun, 03 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/09/03/i-gave-up-on-anaconda-r/</guid>
+      <description>In March of this year I decided to run R and RStudio from inside an Anaconda installation as described here. That experiment is over. Two annoyances cropped up:
+My Anaconda RStudio wouldn’t shut down a running Shiny app. I reported this in all the obvious places: here, here and here. Evidently, it’s not a big enough problem to be worth anybody’s trouble. That is fine. In retrospect, it wasn’t that big a deal for me either.</description>
+    </item>
     
     <item>
       <title>A Plain Markdown Post</title>
@@ -19,15 +39,6 @@
       <guid>/2016/12/30/a-plain-markdown-post/</guid>
       <description>This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
  You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc.  There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
-      
-      <guid>/about/</guid>
-      <description>This is a &amp;ldquo;hello world&amp;rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.</description>
     </item>
     
     <item>

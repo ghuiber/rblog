@@ -1,29 +1,19 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "Data science in the fog"
-theme = "hugo-lithium-theme"
+theme = "minimal"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
-[permalinks]
-    post = "/:year/:month/:day/:slug/"
-
-[[menu.main]]
-    name = "About"
-    url = "/about/"
-[[menu.main]]
-    name = "GitHub"
-    url = "https://github.com/ghuiber/rblog"
-[[menu.main]]
-    name = "Twitter"
-    url = "https://twitter.com/ghuiber"
-[[menu.main]]
-    name = "StackOverflow"
-    url = "https://stackoverflow.com/users/255155/gabi"    
-
 [params]
-    description = "My notes on things I tinker with."
+    author = "Gabi Huiber"
+    description = "my notes on things I tinker with"
+    githubUsername = "#"
+    accent = "#2f4f4f"
+    showBorder = true
+    backgroundColor = "#fcfcfc"
+    font = "Raleway" # should match the name on Google Fonts!
 
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.11.0"
@@ -34,9 +24,36 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     MathJaxCDN = "//cdn.bootcss.com"
     MathJaxVersion = "2.7.1"
 
-    [params.logo]
-    url = "logo.png"
-    width = 50
-    height = 50
-    alt = "Logo"
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+    
+[[menu.main]]
+    url = "/"
+    name = "Home"
+    weight = 1
+    
+[[menu.main]]
+    url = "/post/"
+    name = "Posts"
+    weight = 2    
+    
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+    
+[[menu.icon]]
+    name = "github"
+    url = "https://github.com/ghuiber/rblog"
+    weight = 1
+    
+[[menu.icon]]
+    name = "twitter"
+    url = "https://twitter.com/ghuiber"
+    weight = 2
+    
+[[menu.icon]]
+    name = "stack-overflow"
+    url = "https://stackoverflow.com/users/255155/gabi"
+    weight = 3
 

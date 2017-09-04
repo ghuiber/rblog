@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Data science in the fog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Dec 2016 21:49:57 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 03 Sep 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>I gave up on Anaconda R</title>
+      <link>/2017/09/03/i-gave-up-on-anaconda-r/</link>
+      <pubDate>Sun, 03 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/09/03/i-gave-up-on-anaconda-r/</guid>
+      <description>In March of this year I decided to run R and RStudio from inside an Anaconda installation as described here. That experiment is over. Two annoyances cropped up:
+My Anaconda RStudio wouldn’t shut down a running Shiny app. I reported this in all the obvious places: here, here and here. Evidently, it’s not a big enough problem to be worth anybody’s trouble. That is fine. In retrospect, it wasn’t that big a deal for me either.</description>
+    </item>
     
     <item>
       <title>A Plain Markdown Post</title>

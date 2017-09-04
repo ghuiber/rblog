@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>I gave up on Anaconda R</title>
+        <style>
+
+    html body {
+        font-family: Raleway, sans-serif;
+        background-color: #fcfcfc;
+    }
+
+    :root {
+        --accent: #2f4f4f;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+
+
+
+<script src="/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+ <meta name="generator" content="Hugo 0.26" />
+        
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">I gave up on Anaconda R</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/post/">Posts</a></li>
+                            
+                                <li><a href="/about/">About</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="https://github.com/ghuiber/rblog"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/ghuiber"><i class="fa fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://stackoverflow.com/users/255155/gabi"><i class="fa fa-stack-overflow"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/2017/09/03/i-gave-up-on-anaconda-r/">I gave up on Anaconda R</a></h4>
+    <h5>September 3, 2017</h5>
+    
+
+</div>
+
+
+    <br> <div class="text-justify"><p>In March of this year I decided to run R and RStudio from inside an Anaconda installation as described <a href="https://docs.continuum.io/anaconda/user-guide/tasks/use-r-language?utm_source=housefile&amp;utm_medium=email&amp;utm_campaign=onboarding_cheat_sheet&amp;mkt_tok=eyJpIjoiWVRneE9UUmlaREV6WVRoaSIsInQiOiJmVEF2S1l0NHZsQSs3enM4VlNSOW5MTVF4aEE3eVNVQ3JhXC9WSFZTMzJGa1Q3UlJaNURJd3Zud0FsTnR6NjRhdnRMeDBmUzR3Q0pDRWM4SVpBMDAyQUo0eVU0RXoxS2RDK2xuSWlPckQ0bkN3UTBOSEF2dHpZaE9ER2RBMEJZYWoifQ%3D%3D#">here</a>. That experiment is over. Two annoyances cropped up:</p>
+<ol style="list-style-type: decimal">
+<li>My Anaconda RStudio wouldn’t shut down a running Shiny app. I reported this in all the obvious places: <a href="https://support.rstudio.com/hc/en-us/community/posts/115006375927-Shiny-apps-and-dashboards-won-t-stop">here</a>, <a href="https://github.com/ContinuumIO/anaconda-issues/issues/1732">here</a> and <a href="https://stackoverflow.com/questions/44008205/rstudio-behaves-in-unexpected-ways-in-anaconda">here</a>. Evidently, it’s not a big enough problem to be worth anybody’s trouble. That is fine. In retrospect, it wasn’t that big a deal for me either.</li>
+<li>This one is though: the latest update of the conda kit (to R 3.4.1 and RStudio 1.0.153) didn’t fix the first issue, and also brought up the <code>Error in tools::startDynamicHelp() : internet routines cannot be loaded</code> message at launch time. This means that you won’t get online R help. Any attempt to <code>??</code> anything will repeat this same message.</li>
+</ol>
+<p>So I’m back to a <a href="https://www.rstudio.com/products/rstudio/download/">stock RStudio</a> and a <a href="https://cran.r-project.org/">stock R</a> downloaded as Mac OS X binaries. This pairing works as expected. I kept Anaconda because I may still nose around Python 3 at some point. If you do this and keep your Anaconda R, you will have to direct RStudio to the <code>/usr/local/bin/R</code> explicitly.</p>
+<p>There are a couple of ways to do this. One is indirectly explained <a href="https://stackoverflow.com/questions/38534383/how-to-set-up-conda-installed-r-for-use-with-rstudio">here</a> (it actually shows how to point RStudio to an Anaconda R but the recipe <code>launchctl setenv RSTUDIO_WHICH_R</code> can be changed to suit).</p>
+<p>You could also simply push the Anaconda stuff to the back of the path; it puts itself at the front when you install Anaconda by writing a one-line <code>~/.bash_profile</code> file that says</p>
+<pre><code>export PATH=&quot;/Users/&lt;YOURUSERNAME&gt;/anaconda3/bin:$PATH&quot;</code></pre>
+<p>You can reverse the order and save over:</p>
+<pre><code>export PATH=&quot;$PATH:/Users/ghuiber/anaconda3/bin&quot;</code></pre>
+<p>Or you could decide that you don’t need two R’s. You can get rid of the one under Anaconda with <code>conda remove r-essentials</code> and then <code>conda clean</code>. That is what I did.</p>
+<p>Does this work <span class="math inline">\(\Sigma\)</span>?</p>
+</div>
+
+    
+    
+
+    
+
+    
+
+</main>
+
+        <footer>
+
+            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+
+        </footer>
+
+    </body>
+
+</html>
+
