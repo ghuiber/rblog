@@ -3,14 +3,14 @@ title: I gave up on Anaconda R
 author: Gabi Huiber
 date: '2017-09-03'
 slug: i-gave-up-on-anaconda-r
-categories: []
-tags: []
+categories: [R]
+tags: [Anaconda]
 ---
 
 In March of this year I decided to run R and RStudio from inside an Anaconda installation as described [here](https://docs.continuum.io/anaconda/user-guide/tasks/use-r-language?utm_source=housefile&utm_medium=email&utm_campaign=onboarding_cheat_sheet&mkt_tok=eyJpIjoiWVRneE9UUmlaREV6WVRoaSIsInQiOiJmVEF2S1l0NHZsQSs3enM4VlNSOW5MTVF4aEE3eVNVQ3JhXC9WSFZTMzJGa1Q3UlJaNURJd3Zud0FsTnR6NjRhdnRMeDBmUzR3Q0pDRWM4SVpBMDAyQUo0eVU0RXoxS2RDK2xuSWlPckQ0bkN3UTBOSEF2dHpZaE9ER2RBMEJZYWoifQ%3D%3D#). That experiment is over. Two annoyances cropped up: 
 
   1. My Anaconda RStudio wouldn't shut down a running Shiny app. I reported this in all the obvious places: [here](https://support.rstudio.com/hc/en-us/community/posts/115006375927-Shiny-apps-and-dashboards-won-t-stop), [here](https://github.com/ContinuumIO/anaconda-issues/issues/1732) and [here](https://stackoverflow.com/questions/44008205/rstudio-behaves-in-unexpected-ways-in-anaconda). Evidently, it's not a big enough problem to be worth anybody's trouble. That is fine. In retrospect, it wasn't that big a deal for me either.
-  2. This one is though: the latest update of the conda kit (to R 3.4.1 and RStudio 1.0.153) didn't fix the first issue, and also brought up the `Error in tools::startDynamicHelp() : internet routines cannot be loaded` message at launch time. This means that you won't get online R help. Any attempt to `??` anything will repeat this same message.
+  2. This one is though: the latest update of the conda kit (to R 3.4.1 and RStudio 1.0.153) brought up the `Error in tools::startDynamicHelp() : internet routines cannot be loaded` message at launch time. This means that you won't get online R help. Any attempt to `??` anything will repeat this same message.
 
 So I'm back to a [stock RStudio](https://www.rstudio.com/products/rstudio/download/) and a [stock R](https://cran.r-project.org/) downloaded as Mac OS X binaries. This pairing works as expected. I kept Anaconda because I may still nose around Python 3 at some point. If you do this and keep your Anaconda R, you will have to direct RStudio to the `/usr/local/bin/R` explicitly. 
 
@@ -20,11 +20,9 @@ You could also simply push the Anaconda stuff to the back of the path; it puts i
 ```
 export PATH="/Users/<YOURUSERNAME>/anaconda3/bin:$PATH"
 ```
-You can reverse the order and save over:
+You can just edit that line to reverse the order and save over:
 ```
-export PATH="$PATH:/Users/ghuiber/anaconda3/bin"
+export PATH="$PATH:/Users/<YOURUSERNAME>/anaconda3/bin"
 ```
 
 Or you could decide that you don't need two R's. You can get rid of the one under Anaconda with `conda remove r-essentials` and then `conda clean`. That is what I did.
-
-Does this work $\Sigma$?

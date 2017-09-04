@@ -10,9 +10,9 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     author = "Gabi Huiber"
     description = "my notes on things I tinker with"
     githubUsername = "#"
-    accent = "#2f4f4f"
+    accent = "#68838b"
     showBorder = true
-    backgroundColor = "#fcfcfc"
+    backgroundColor = "#fafafa"
     font = "Raleway" # should match the name on Google Fonts!
 
     # options for highlight.js (version, additional languages, and theme)
